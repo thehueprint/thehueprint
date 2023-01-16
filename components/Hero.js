@@ -6,17 +6,17 @@ export default function Hero() {
     // Section is 42rem tall
     <section className="hero container mx-auto h-[42rem]">
       <div className="hero_content flex">
-        <Image src={heroImage} width={624} height={672} alt="hero image" />
+        <Image className="logo" src={heroImage} width={624} height={672} alt="hero image" />
 
         <div className="hero_content-text h-[42rem] w-[41rem]">
-          <div className="hero_box-1 mt-[64px] ml-[32px] mr-[64px] h-[22.125rem]">
-            <div className="hero_box-sub h-[20.875rem] w-[35rem] ">
-              <h1 className="hero_h1 text-5xl">Lorem ipsum dolor sit amet, consectetur</h1>
-              <p className="hero_subtitle text-2xl">
+          <div className="hero_box-1 h-[26.125rem] pt-[64px] pl-[32px] pr-[64px]">
+            <div className="hero_box-sub flex h-[20.875rem] w-[35rem] flex-col items-start gap-8">
+              <h1 className="hero_h1 -order-none flex-grow-0 text-5xl">Lorem ipsum dolor sit amet, consectetur</h1>
+              <p className="hero_subtitle order-1 flex-grow-0 self-stretch text-2xl">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim, incidunt. Blanditiis optio sit quae
                 suscipit ea magnam ipsa delectus voluptatem!
               </p>
-              <button className="hero_button py=[2rem] h-[2.875rem] w-[10.0625rem] bg-slate-900 px-[0.625rem] text-white">
+              <button className="hero_button order-2 h-[46px] w-[161px] bg-slate-900 text-center text-white">
                 Lorem press.
               </button>
             </div>
