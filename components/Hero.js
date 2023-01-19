@@ -29,7 +29,7 @@ export default function Hero() {
               <a href="/">Lorem ipsum</a>
             </div>
             <div className="blocks self-start">
-              <div className="hero_box-2-2 h-[64px] w-[168px] bg-[#000000]"></div>
+              <div className="hero_box-2-2 h-[64px] w-[168px] bg-slate-900"></div>
               <div className="hero_box-2-2 h-[64px] w-[168px] bg-[#A98E00]"></div>
             </div>
           </div>

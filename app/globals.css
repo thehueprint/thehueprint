@@ -5,6 +5,7 @@
 @layer base {
   html {
     @apply bg-white;
+    @apply h-screen;
   }
   body {
     @apply min-h-fit;

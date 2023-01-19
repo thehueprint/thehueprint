@@ -1,5 +1,5 @@
 import './globals.css'
-import { Navigation, Hero, Social, Mission, Feature, Work } from '../components'
+import { Navigation, Hero, Social, Mission, Feature, Work, Team } from '../components'
 
 export default function RootLayout({ children }) {
   return (
@@ -11,6 +11,7 @@ export default function RootLayout({ children }) {
         <Mission />
         <Feature />
         <Work />
+        <Team />
         {children}
       </body>
     </html>
