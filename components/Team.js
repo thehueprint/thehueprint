@@ -5,21 +5,44 @@ import exampleImage from '../public/exampleImage.jpg'
 
 export default function Team() {
   return (
-    <section className="team container m-auto space-y-8 bg-white px-6 text-gray-500 md:px-12">
-      <div className="relative min-w-full">
-        <span className="text-lg font-semibold text-gray-600">Team</span>
-        <h2 className="mt-4 pt-16 pb-44 text-2xl font-bold text-gray-900 md:text-4xl">
-          Lorem ipsum dolor sit amet. <br className="lg:block" hidden /> Lorem, ipsum.
-        </h2>
-
+    <section className="team relative space-y-8 bg-white px-6 text-gray-500">
+      <h3 className="pt-16 text-lg font-semibold text-gray-600 ">Team</h3>
+      <h2 className="mt-4 pb-44 text-2xl font-bold text-gray-900 md:text-4xl">
+        Lorem ipsum dolor sit amet. <br className="lg:block" hidden /> Lorem, ipsum.
+      </h2>
+      <div className="team_content relative mx-auto mb-5 flex w-4/5 justify-between">
         <Image
-          className="absolute top-0 left-0 rounded-full object-cover"
+          className="h-80 w-80 rounded-full object-cover"
           src={exampleImage}
           alt="example image"
-          height={648}
-          width={611}
+          placeholder="blur"
         />
-        <div className="absolute top-[5.8125rem] left-[6rem] h-[13.25rem] w-[71.8125rem] border-y-4 border-l-4 border-solid border-[#000000] "></div>
+        <div className="team_text">
+          <h3 className="pt-16 text-lg font-semibold text-gray-600 ">Team</h3>
+          <p className="pt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure earum sunt impedit dolore?
+          </p>
+        </div>
+
+        <div className="absolute bottom-[0] right-[0rem] h-[13.25rem] w-[71.8125rem] border-y-4 border-l-4 border-solid border-[#000000]"></div>
+      </div>
+
+      {/* Second Member*/}
+      <div className="team_content mx-auto flex w-4/5 justify-between">
+        <Image
+          className="h-80 w-80 rounded-full object-cover"
+          src={exampleImage}
+          alt="example image"
+          placeholder="blur"
+        />
+        <div className="team_text">
+          <h3 className="pt-16 text-lg font-semibold text-gray-600 ">Team</h3>
+          <p className="pt-3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis iure earum sunt impedit dolore?
+          </p>
+        </div>
+
+        <div className="absolute bottom-[0] right-[0rem] h-[13.25rem] w-[71.8125rem] border-y-4 border-l-4 border-solid border-[#000000]"></div>
       </div>
     </section>
   )

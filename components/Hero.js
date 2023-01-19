@@ -4,7 +4,7 @@ import heroImage from '../public/heroImage.png'
 export default function Hero() {
   return (
     // Section is 42rem tall
-    <section className="hero container mx-auto h-[42rem]">
+    <section className="hero h-[42rem]">
       <div className="hero_content flex">
         <Image className="logo" src={heroImage} width={624} height={672} alt="hero image" />
 
@@ -23,11 +23,12 @@ export default function Hero() {
           </div>
 
           <div className="hero_box-2 flex h-[15.875rem]">
-            <div className="hero_box-2-1 h-[11.875rem] w-[26.5rem] self-end bg-[#DAB701]">
+            <article className="hero_box-2-1 h-[11.875rem] w-[26.5rem] self-end bg-[#DAB701]">
               <h1 className="hero_h2">Lorem ipsum dolor sit amet consectetur.</h1>
               <p className="hero_subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, quod.</p>
               <a href="/">Lorem ipsum</a>
-            </div>
+            </article>
+
             <div className="blocks self-start">
               <div className="hero_box-2-2 h-[64px] w-[168px] bg-slate-900"></div>
               <div className="hero_box-2-2 h-[64px] w-[168px] bg-[#A98E00]"></div>

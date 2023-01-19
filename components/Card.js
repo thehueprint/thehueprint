@@ -3,7 +3,7 @@ import exampleImage from '../public/exampleImage.jpg'
 
 export default function Card({ addHover }) {
   return (
-    <div className="group relative bg-white transition hover:z-[1] hover:shadow-2xl">
+    <div className="card group relative bg-white transition hover:z-[1] hover:shadow-2xl">
       <div className={`relative space-y-8 p-8 ${addHover}`}>
         <Image src={exampleImage} className="w-10" width={512} height={512} alt="Feature icon" />
 

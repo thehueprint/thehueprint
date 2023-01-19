@@ -1,6 +1,6 @@
 export default function Social() {
   return (
-    <section className="social container flex h-[8rem] w-[80rem]">
+    <section className="social flex h-[8rem] max-w-full">
       <div className="social_content flex h-[8rem] w-[39rem] items-center justify-between bg-slate-900"></div>
 
       <div className="social_box flex w-[41rem] place-content-end">
