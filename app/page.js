@@ -1,8 +1,7 @@
-import { Navigation, Hero, Social, Mission, Feature, Work, Team, Footer } from '../components'
+import { Hero, Social, Mission, Feature, Work, Team, Footer } from '../components'
 
 const Page = () => (
   <main>
-    <Navigation />
     <Hero />
     <Social />
     <Mission />
