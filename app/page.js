@@ -1,4 +1,4 @@
-import { Hero, Social, Mission, Feature, Work, Team, Footer } from '../components'
+import { Hero, Social, Mission, Feature, Work, Team } from '../components';
 
 const Page = () => (
   <main>
@@ -9,8 +9,7 @@ const Page = () => (
     <Work />
     <Team />
     <Mission />
-    <Footer />
   </main>
-)
+);
 
-export default Page
+export default Page;

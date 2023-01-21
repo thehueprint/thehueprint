@@ -7,5 +7,6 @@ import Card from './Card'
 import Work from './Work'
 import Team from './Team'
 import Footer from './Footer'
+import Button from './Button'
 
-export { Navigation, Hero, Social, Mission, Feature, Card, Work, Team, Footer }
+export { Navigation, Hero, Social, Mission, Feature, Card, Work, Team, Footer, Button }
