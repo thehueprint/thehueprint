@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev --turbo --show-all",
+    "dev": "next dev --show-all",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -16,6 +16,8 @@
     "singleQuote": true
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
+    "@heroicons/react": "^2.0.13",
     "@next/font": "^13.1.1",
     "eslint": "8.30.0",
     "eslint-config-next": "^13.1.2",

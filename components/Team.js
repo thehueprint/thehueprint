@@ -11,21 +11,29 @@ export default function Team() {
         Lorem ipsum dolor sit amet. <br className="lg:block" hidden /> Lorem,
         ipsum.
       </h2>
+
+      {/* First Member*/}
       <div className="team_content relative mx-auto flex w-4/5 justify-between">
-        <Image
-          className="h-80 w-80 rounded-full object-cover"
-          src={exampleImage}
-          alt="example image"
-          width={500}
-          height={500}
-        />
-        <div className="team_text">
+        <div className="team_picture relative h-80 w-80">
+          <Image
+            className=" rounded-full object-cover"
+            src={exampleImage}
+            alt="example image"
+            fill
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1200px) 50vw,
+              33vw"
+          />
+        </div>
+
+        {/* First Member article*/}
+        <article className="team_text p-16">
           <h3 className="pt-16 text-lg font-semibold text-gray-600 ">Team</h3>
           <p className="pt-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
             iure earum sunt impedit dolore?
           </p>
-        </div>
+        </article>
       </div>
 
       {/* Second Member*/}
