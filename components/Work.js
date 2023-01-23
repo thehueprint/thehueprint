@@ -11,21 +11,23 @@ export default function Work() {
     <section className="work max-w-screen-2xl bg-white">
       {/* 1st part of the work Section */}
 
-      <div className="work_projects relative flex">
+      <div className="work_projects relative flex flex-row">
         {/*Right side of work feature section*/}
         {/*summary of project*/}
 
         <div className="work_feature h-full w-2/4 bg-[#EFEFEF]">
-          <div className="work_feature-box flex h-96">
-            <div className="blocks">
-              <div className="box h-16 w-48 bg-slate-900"></div>
-              <div className="box h-24 w-40 bg-[#A98E00]">yellow</div>
+          <div className="work_feature-box flex h-96 flex-row justify-end">
+            <div className="blocks flex flex-col">
+              <div className="box-work-1 h-[112px] w-[195px] bg-slate-900"></div>
+              <div className="box-work-2 h-24 w-40 self-end bg-[#4B4EC5]">
+                yellow
+              </div>
             </div>
 
-            <article className=" h-64 self-end bg-[#4649C3] p-16">
-              <h2 className="work_project-titl">Feature Project</h2>
+            <article className="h-[17rem] w-1/2 self-end bg-[#4649C3] p-11">
+              <h2 className="work_project-title text-white">Feature Project</h2>
 
-              <p className="work_project-summary">
+              <p className="work_project-summary text-sm text-white">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
                 euismod, nisl vel tincidunt lacinia, nunc nisl aliquet nisl, vel
                 aliquet nisl nisl sit amet nisl.
@@ -34,8 +36,8 @@ export default function Work() {
           </div>
 
           <div className="blocks flex h-40">
-            <div className=" h-2/4 w-3/12 bg-slate-900">black</div>
-            <div className=" h-2/4 w-40 bg-[#A98E00]">yellow</div>
+            <div className="box-work-3 h-full w-[160px] bg-slate-900"></div>
+            <div className="box-work-4 h-24 w-40 bg-[#4B4EC5]"></div>
           </div>
         </div>
 
