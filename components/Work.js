@@ -1,11 +1,14 @@
 import Image from 'next/image';
+import featureImage from '../public/featureImage.jpg';
 import exampleImage from '../public/exampleImage.jpg';
 
-/* create a carousel that has two main divs, One holding the summary of project, one holding the image of project, and 3 divs of preview images of additional projects  */
+/* Things to work on  */
+/* 1. create a carousel that has two main divs, One holding the summary of project, one holding the image of project, and 3 divs of preview images of additional projects  */
+/* 2. Research the size property for the Image component to figure out what are the best sizes for images loaded for responsiveness  */
 
 export default function Work() {
   return (
-    <section className="work max-h-screen max-w-screen-2xl bg-white">
+    <section className="work max-w-screen-2xl bg-white">
       {/* 1st part of the work Section */}
 
       <div className="work_projects relative flex">
@@ -42,7 +45,7 @@ export default function Work() {
         <div className="work_project-card relative w-2/4">
           <Image
             className="work_project-image object-cover"
-            src={exampleImage}
+            src={featureImage}
             alt="feature project"
             fill
             sizes="(max-width: 768px) 100vw,
@@ -55,28 +58,31 @@ export default function Work() {
       {/* 2nd part of the work Section */}
       {/* 3 preview images of other projects */}
       <div className="Work_Projects flex h-80 w-auto">
-        <div className="work_project-card relative w-2/4 object-cover">
+        <div className="work_project-card relative w-2/4">
           <Image
-            className="work_project-image w-2/4"
+            className="work_project-image object-cover"
             src={exampleImage}
             alt="feature project"
             fill
             sizes="(max-width: 768px) 100vw,
-              (max-width: 1200px) 50vw,
+              (max-width: 1280px) 50vw,
               33vw"
           />
         </div>
-        <div className="work_project-card relative w-2/4 object-cover">
+        <div className="work_project-card relative w-2/4">
           <Image
-            className="work_project-image"
+            className="work_project-image object-cover"
             src={exampleImage}
             alt="feature project"
             fill
+            sizes="(max-width: 768px) 100vw,
+              (max-width: 1280px) 50vw,
+              33vw"
           />
         </div>
-        <div className="work_project-card relative w-2/4 object-cover">
+        <div className="work_project-card relative w-2/4">
           <Image
-            className="work_project-image"
+            className="work_project-image object-cover"
             src={exampleImage}
             alt="feature project"
             fill

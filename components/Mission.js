@@ -11,5 +11,5 @@ export default function Mission() {
         </article>
       </div>
     </section>
-  )
+  );
 }

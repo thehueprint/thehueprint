@@ -1,7 +1,7 @@
-export default function Button(second) {
+export default function Button({ text }) {
   return (
     <button className="btn btn-blue order-2 h-[46px] w-[161px] text-center">
-      Lorem press.
+      <p className="text-white">{text}</p>
     </button>
   );
 }
