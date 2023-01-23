@@ -1,9 +1,11 @@
+import Link from 'next/link';
+
 export default function Footer() {
   return (
     <footer className="footer bg-black px-16 py-20">
-      <div className="footer_content relative flex">
+      <section className="footer_content relative flex">
         <div className="w-1/2">
-          <div className="w-2/3">
+          <article className="w-2/3">
             <h2 className="footer_title text-2xl font-semibold text-white">
               The Hueprint
             </h2>
@@ -21,7 +23,7 @@ export default function Footer() {
                 info@thehueprint.com
               </a>
             </div>
-          </div>
+          </article>
 
           <div className="footer_social">
             <h2 className="footer_title text-2xl font-semibold text-white">
@@ -32,6 +34,7 @@ export default function Footer() {
               ab debitis voluptate voluptatem iusto aut delectus neque, cum
               doloribus velit.
             </p>
+
             <div className="social_icons">{/* Social Icons */}</div>
           </div>
         </div>
@@ -58,7 +61,29 @@ export default function Footer() {
             </button>
           </form>
         </div>
-      </div>
+      </section>
+
+      <section className="footer_bottom flex items-center justify-between">
+        <div className="footer_nav">
+          <ul>
+            <li className="footer_nav-link">
+              <Link></Link>
+            </li>
+            <li className="footer_nav-link">
+              <Link></Link>
+            </li>
+            <li className="footer_nav-link">
+              <Link></Link>
+            </li>
+            <li className="footer_nav-link">
+              <Link></Link>
+            </li>
+            <li className="footer_nav-link">
+              <Link></Link>
+            </li>
+          </ul>
+        </div>
+      </section>
     </footer>
   );
 }
