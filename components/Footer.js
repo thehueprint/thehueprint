@@ -4,12 +4,12 @@ import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="footer bg-black px-16 py-20 text-white">
+    <footer className="footer bg-slate-900 px-6 pt-16 text-white md:px-16 md:py-20">
       {/** Footer Top */}
-      <section className="footer_content relative mb-20 flex">
+      <section className="relative mb-20 flex flex-col md:flex-row">
         <div className="w-1/2">
           {/** Footer Brand */}
-          <article className="h-1/2 w-2/3">
+          <article className="hidden md:block md:h-1/2 md:w-2/3">
             <h2 className="footer_brand-title text-2xl font-semibold text-white">
               The Hueprint
             </h2>
@@ -62,7 +62,7 @@ export default function Footer() {
         </div>
 
         {/** Footer Form */}
-        <div className="footer_form w-1/2">
+        <div className="footer_form order-first mb-16 md:order-none md:mb-4 md:w-1/2">
           <h2 className="form_title text-2xl font-semibold text-white">
             Contact Us
           </h2>
@@ -96,31 +96,29 @@ export default function Footer() {
       </section>
 
       {/** Footer Bottom */}
-      <section className="footer_bottom  max-w-full items-center">
-        <div className="footer_bottom-content flex flex-row justify-between">
-          <ul className="footer_nav flex w-[31.125rem] justify-between text-sm font-light text-[#8C8C8C]">
-            <li className="footer_nav-link">
-              <Link href="/">About</Link>
-            </li>
-            <li className="footer_nav-link">
-              <Link href="/">Contact</Link>
-            </li>
-            <li className="footer_nav-link">
-              <Link href="/">Privacy Policy</Link>
-            </li>
-            <li className="footer_nav-link">
-              <Link href="/">Sitemap</Link>
-            </li>
-            <li className="footer_nav-link">
-              <Link href="/">Terms of Use</Link>
-            </li>
-          </ul>
+      <section className="fb flex flex-col justify-between md:flex-row md:items-center">
+        <ul className="fl mb-4 flex flex-col justify-between space-y-6 font-cuprum text-sm font-light text-[#8C8C8C] md:mb-0 md:w-[31.125rem] md:flex-row md:space-y-0">
+          <li className="footer_nav-link">
+            <Link href="/">About</Link>
+          </li>
+          <li className="footer_nav-link">
+            <Link href="/">Contact</Link>
+          </li>
+          <li className="footer_nav-link">
+            <Link href="/">Privacy Policy</Link>
+          </li>
+          <li className="footer_nav-link">
+            <Link href="/">Sitemap</Link>
+          </li>
+          <li className="footer_nav-link">
+            <Link href="/">Terms of Use</Link>
+          </li>
+        </ul>
 
-          <div className="footer_copyright">
-            <p className="footer_copyright-text text-sm font-light text-[#8C8C8C]">
-              © 2000-2021, All Rights Reserved
-            </p>
-          </div>
+        <div className="copyright">
+          <p className="font-cuprum text-sm font-light text-[#8C8C8C]">
+            © 2000-2021, All Rights Reserved
+          </p>
         </div>
       </section>
     </footer>

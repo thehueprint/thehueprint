@@ -1,23 +1,38 @@
-import Image from 'next/image'
-import exampleImage from '../public/exampleImage.jpg'
+import Image from 'next/image';
+import exampleImage from '../public/exampleImage.jpg';
+import Link from 'next/link';
 
-export default function Card({ addHover }) {
+export default function Card() {
   return (
-    <div className="card group relative bg-white transition hover:z-[1] hover:shadow-2xl">
-      <div className={`relative space-y-8 p-8 ${addHover}`}>
-        <Image src={exampleImage} className="w-10" width={512} height={512} alt="Feature icon" />
-
-        <div className="space-y-2">
-          <h5 className="group-hover: text-xl font-medium text-gray-800 text-[] transition">First feature</h5>
-          <p className="text-sm text-gray-600">Neque Dolor, fugiat non cum doloribus aperiam voluptates nostrum.</p>
-        </div>
-        <a href="#" className="flex items-center justify-between group-hover:text-yellow-600">
-          <span className="text-sm">Read more</span>
-          <span className="-translate-x-4 text-2xl opacity-0 transition duration-300 group-hover:translate-x-0 group-hover:opacity-100">
-            &rarr;
-          </span>
-        </a>
+    <div className="card relative space-y-8 bg-white p-8 md:h-[31.1875rem]">
+      <div className="relative">
+        <Image
+          src={exampleImage}
+          className="w-10"
+          width={512}
+          height={512}
+          alt="Feature icon"
+        />
       </div>
+
+      <article className="space-y-8">
+        <h2 className="font-cuprum text-4xl font-bold leading-9 text-black">
+          Design
+        </h2>
+        <p className="font-maitree text-2xl font-normal leading-10 text-black">
+          We create immersive digital experiences by using user-centered design
+          practices to understand and solve business challenges through
+          intuitive and engaging solutions.
+        </p>
+
+        <div className="w-1/2 ">
+          <Link href="/">
+            <span className="font-maitree text-lg font-normal text-black underline">
+              Learn More.
+            </span>
+          </Link>
+        </div>
+      </article>
     </div>
-  )
+  );
 }

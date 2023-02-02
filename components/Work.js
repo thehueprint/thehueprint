@@ -1,6 +1,7 @@
 import Image from 'next/image';
-import featureImage from '../public/featureImage.jpg';
-import exampleImage from '../public/exampleImage.jpg';
+import fwi from '../public/fwi.png';
+import wi from '../public/wi.png';
+import Link from 'next/link';
 
 /* Things to work on  */
 /* 1. create a carousel that has two main divs, One holding the summary of project, one holding the image of project, and 3 divs of preview images of additional projects  */
@@ -8,46 +9,57 @@ import exampleImage from '../public/exampleImage.jpg';
 
 export default function Work() {
   return (
-    <section className="work max-w-screen-2xl bg-white">
+    <section className="bg-white">
+      {/* Maybe make into a grid */}
       {/* 1st part of the work Section */}
 
-      <div className="work_projects relative flex flex-row">
-        {/*Right side of work feature section*/}
+      <div className="relative h-[37.5rem] md:flex md:flex-row">
+        {/*left side of work feature section*/}
         {/*summary of project*/}
 
-        <div className="work_feature h-full w-2/4 bg-[#EFEFEF]">
-          <div className="work_feature-box flex h-96 flex-row justify-end">
-            <div className="blocks flex flex-col">
-              <div className="box-work-1 h-[112px] w-[195px] bg-slate-900"></div>
-              <div className="box-work-2 h-24 w-40 self-end bg-[#4B4EC5]">
-                yellow
-              </div>
+        <div className="md:w-1/2">
+          {/* left box */}
+          <div className="md:flex md:h-96 md:flex-row md:justify-end">
+            {/* Boxes */}
+            <div className="hidden md:flex md:flex-col">
+              <div className="bg-[#D8B800] md:h-[112px] md:w-[195px]"></div>
+              <div className="bg-[#A98E00] md:h-24 md:w-40 md:self-end"></div>
             </div>
 
-            <article className="h-[17rem] w-1/2 self-end bg-[#4649C3] p-11">
-              <h2 className="work_project-title text-white">Feature Project</h2>
+            {/* Project Article */}
+            <article className="flex h-[200px] w-full flex-col justify-center space-y-3 bg-[#D8B800] p-6 md:h-[17rem] md:w-1/2 md:self-end">
+              <h2 className="font-cuprum text-lg font-bold leading-7 text-white md:text-3xl">
+                Feature Project
+              </h2>
 
-              <p className="work_project-summary text-sm text-white">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-                euismod, nisl vel tincidunt lacinia, nunc nisl aliquet nisl, vel
-                aliquet nisl nisl sit amet nisl.
+              <p className="font-maitree text-sm font-normal leading-6 text-white md:text-2xl">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
+                ex.
               </p>
+
+              <div className="w-1/2 ">
+                <Link href="/">
+                  <span className="font-maitree text-lg font-normal text-white underline">
+                    Learn More.
+                  </span>
+                </Link>
+              </div>
             </article>
           </div>
 
-          <div className="blocks flex h-40">
-            <div className="box-work-3 h-full w-[160px] bg-slate-900"></div>
-            <div className="box-work-4 h-24 w-40 bg-[#4B4EC5]"></div>
+          {/* Boxes */}
+          <div className="blocks hidden md:flex md:h-40">
+            <div className="h-full w-[160px] bg-[#D8B800]"></div>
+            <div className="h-24 w-40 bg-[#A98E00]"></div>
           </div>
         </div>
 
         {/*Right side of work feature section*/}
         {/*feature image of project*/}
-
-        <div className="work_project-card relative w-2/4">
+        <div className="relative h-60 w-full md:h-full md:w-1/2">
           <Image
-            className="work_project-image object-cover"
-            src={featureImage}
+            className="object-cover"
+            src={fwi}
             alt="feature project"
             fill
             sizes="(max-width: 768px) 100vw,
@@ -59,11 +71,11 @@ export default function Work() {
 
       {/* 2nd part of the work Section */}
       {/* 3 preview images of other projects */}
-      <div className="Work_Projects flex h-80 w-auto">
-        <div className="work_project-card relative w-2/4">
+      <div className="hidden md:flex md:w-auto">
+        <div className="relative h-80 w-2/4">
           <Image
             className="work_project-image object-cover"
-            src={exampleImage}
+            src={wi}
             alt="feature project"
             fill
             sizes="(max-width: 768px) 100vw,
@@ -71,10 +83,11 @@ export default function Work() {
               33vw"
           />
         </div>
-        <div className="work_project-card relative w-2/4">
+
+        <div className="relative h-80 w-2/4">
           <Image
-            className="work_project-image object-cover"
-            src={exampleImage}
+            className="object-cover"
+            src={wi}
             alt="feature project"
             fill
             sizes="(max-width: 768px) 100vw,
@@ -82,10 +95,11 @@ export default function Work() {
               33vw"
           />
         </div>
-        <div className="work_project-card relative w-2/4">
+
+        <div className="relative h-80 w-2/4">
           <Image
             className="work_project-image object-cover"
-            src={exampleImage}
+            src={wi}
             alt="feature project"
             fill
             sizes="(max-width: 768px) 100vw,

@@ -6,7 +6,12 @@ module.exports = {
     '!./node_modules',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        cuprum: ['Cuprum', 'sans-serif'],
+        maitree: ['Maitree', 'serif'],
+      },
+    },
   },
 
   plugins: [require('@tailwindcss/forms')({ strategy: 'base' })],

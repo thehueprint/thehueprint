@@ -5,9 +5,10 @@ import exampleImage from '../public/exampleImage.jpg';
 
 export default function Employee() {
   return (
-    <article className="team_frame relative mb-16 flex w-full space-x-9 overflow-hidden">
-      <div className="team_picture relative z-10 h-[37.5rem] w-[37.5rem] overflow-hidden rounded-full">
+    <article className="grid grid-cols-2 space-y-8">
+      <div className="relative h-72 w-72 md:h-[36rem] md:w-[36rem]">
         <Image
+          className="rounded-full"
           src={exampleImage}
           alt="example image"
           fill
@@ -18,28 +19,33 @@ export default function Employee() {
       </div>
 
       {/* First Member article*/}
-      <div className="team text w-[500px] flex-col">
-        <article className="team_text h-2/4 pt-16">
-          <h3 className=" text-lg font-semibold text-black ">Position</h3>
-          <p className="pt-3">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
-            vulputate libero et velit interdum, ac aliquet odio mattis. Class
-            aptent taciti sociosqu ad litora torquent per conubia nostra, per
-            inceptos himenaeos. Curabitur tempus urna at turpis condimentum
-            lobortis.
-          </p>
-        </article>
 
-        <blockquote
-          className="team_quote flex text-lg font-semibold text-black"
-          cite="http://www.worldwildlife.org/who/index.html"
-        >
-          <i>Lorem ipsum dolor sit amet. - </i>
-          <cite>Glenn Law</cite>
-        </blockquote>
+      <div className="h-2/4">
+        <h2 className="mt-4 mb-2 font-cuprum text-5xl font-bold leading-10 text-black">
+          Position
+        </h2>
+        <p className="mb-2 font-cuprum text-sm font-normal leading-6 text-black md:text-lg">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
+          vulputate libero et velit interdum, ac aliquet odio mattis. Class
+          aptent taciti sociosqu ad litora torquent per conubia nostra, per
+          inceptos himenaeos. Curabitur tempus urna at turpis condimentum
+          lobortis.
+        </p>
       </div>
-
-      <div className="absolute bottom-0 h-[13.75rem] w-[74rem] border-y-4 border-l-4 border-solid border-[#000000] text-right"></div>
     </article>
   );
+}
+
+{
+  /* <div className="mb-4 h-20 w-full border-y-8 border-l-8 border-solid border-[#DAB701] md:w-[74rem]">
+        <article className="p-6 md:h-[11.875rem] md:w-[26.5rem]">
+          <blockquote
+            className="text-sm font-light text-black"
+            cite="http://www.worldwildlife.org/who/index.html"
+          >
+            <i>Lorem ipsum dolor sit amet. - </i>
+            <cite>Glenn Law</cite>
+          </blockquote>
+        </article>
+      </div> */
 }

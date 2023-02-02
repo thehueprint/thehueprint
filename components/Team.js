@@ -4,17 +4,17 @@ import Employee from './Employee';
 
 export default function Team() {
   return (
-    <section className="team h-[110.4375rem] flex-col space-y-16 bg-white pl-16">
-      <header className="my-16 space-y-16">
-        <h3 className="text-lg font-semibold text-black ">Team</h3>
-        <h2 className="text-2xl font-bold text-gray-900 md:text-4xl">
-          Lorem ipsum dolor sit amet. <br className="lg:block" hidden /> Lorem,
-          ipsum.
+    <section className="space-y-16 bg-white p-6">
+      <div className="py-16">
+        <h2 className="mt-4 mb-2 font-cuprum text-5xl font-bold leading-10 text-black">
+          Meet The Team
         </h2>
-      </header>
 
-      <Employee />
-      <Employee />
+        <div className="mt-16 space-y-16">
+          <Employee />
+          <Employee />
+        </div>
+      </div>
     </section>
   );
 }

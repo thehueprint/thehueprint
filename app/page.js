@@ -3,7 +3,7 @@ import { Hero, Social, Mission, Feature, Work, Team } from '../components';
 const Page = () => (
   <main>
     <Hero />
-    <Social />
+    <Social classes="hidden md:block" />
     <Mission />
     <Feature />
     <Work />

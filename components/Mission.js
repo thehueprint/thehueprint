@@ -1,13 +1,23 @@
 export default function Mission() {
   return (
-    <section className="mission relative h-[25rem] bg-[#efefef]">
-      <div className="absolute h-[21.5rem] w-[22.5rem] border-x-4 border-b-4 border-solid border-[#DAB701]"></div>
-      <div className="absolute left-[4rem] h-[14.625rem] w-[35rem]  border-x-4 border-b-4 border-solid border-[#4649c5]"></div>
-      <div className="absolute left-[11.3125rem] h-[25rem] w-[22.3125rem]  border-x-4 border-solid border-[#FD0505]"></div>
-      <div className="absolute top-[5.8125rem] right-0 h-[13.75rem] w-[74rem] border-y-4 border-l-4 border-solid border-[#000000] ">
-        <article className="">
-          {/* <h1>Lorem ipsum dolor sit amet consectetur.</h1>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, asperiores.</p> */}
+    <section className="relative flex h-80 flex-col justify-center bg-[#4649C3] md:block md:h-[34.3125rem] md:bg-[#EFEFEF]">
+      {/*bordered boxes*/}
+
+      <div className="relative hidden md:block md:h-[24.0625rem] md:w-[39rem] md:border-x-[20px] md:border-b-[20px] md:border-solid md:border-[#4649c5]">
+        <div className="relative mx-auto hidden md:z-20 md:block md:h-64 md:w-[28.375rem] md:border-x-[15px] md:border-b-[15px] md:border-solid md:border-[#DAB701]"></div>
+      </div>
+
+      <div className="relative h-56 w-full border-y-8 border-l-8 border-solid border-black md:absolute md:top-[5.8125rem] md:right-0 md:z-10 md:flex md:h-[26.3125rem] md:w-[63.5625rem] md:justify-end md:border-y-[15px] md:border-l-[15px] md:border-[#FD0505]">
+        <article className="flex h-[11.875rem] w-3/4 flex-col justify-center self-center p-6 md:mr-36 md:block md:h-72 md:w-[28.25rem] md:p-0">
+          <h2 className="mb-2 font-maitree text-lg font-bold leading-7 text-black md:text-4xl">
+            Creative Digital Solutions for Business Growth.
+          </h2>
+
+          <p className="mb-2 font-cuprum text-sm font-normal leading-6 text-black md:text-lg">
+            Our mission at The Hueprint is to empower businesses by providing
+            innovative digital solutions that drive growth and achieve their
+            objectives through expert guidance and creative design.
+          </p>
         </article>
       </div>
     </section>
