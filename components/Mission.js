@@ -8,12 +8,13 @@ export default function Mission() {
       </div>
 
       <div className="relative h-56 w-full border-y-8 border-l-8 border-solid border-black md:absolute md:top-[5.8125rem] md:right-0 md:z-10 md:flex md:h-[26.3125rem] md:w-[63.5625rem] md:justify-end md:border-y-[15px] md:border-l-[15px] md:border-[#FD0505]">
-        <article className="flex h-[11.875rem] w-3/4 flex-col justify-center self-center p-6 md:mr-36 md:block md:h-72 md:w-[28.25rem] md:p-0">
-          <h2 className="mb-2 font-maitree text-lg font-bold leading-7 text-black md:text-4xl">
+        {/*text inside*/}
+        <article className="flex flex-col items-center justify-center space-y-3 self-center p-6 md:mr-36 md:block md:h-72 md:w-[28.25rem] md:flex-row md:p-0">
+          <h2 className="font-cuprum text-lg font-bold leading-7 text-white md:text-4xl md:text-black">
             Creative Digital Solutions for Business Growth.
           </h2>
 
-          <p className="mb-2 font-cuprum text-sm font-normal leading-6 text-black md:text-lg">
+          <p className=" font-maitree text-sm font-normal leading-6 text-white md:text-lg md:text-black">
             Our mission at The Hueprint is to empower businesses by providing
             innovative digital solutions that drive growth and achieve their
             objectives through expert guidance and creative design.

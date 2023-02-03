@@ -20,7 +20,8 @@ import {
   Squares2X2Icon,
   XMarkIcon,
 } from '@heroicons/react/24/outline';
-import { ChevronDownIcon } from '@heroicons/react/20/solid';
+
+// import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 const solutions = [
   {
@@ -89,31 +90,35 @@ const resources = [
     icon: ShieldCheckIcon,
   },
 ];
-const recentPosts = [
-  { id: 1, name: 'Boost your conversion rate', href: '#' },
-  {
-    id: 2,
-    name: 'How to use search engine optimization to drive traffic to your site',
-    href: '#',
-  },
-  { id: 3, name: 'Improve your customer experience', href: '#' },
-];
+// const recentPosts = [
+//   { id: 1, name: 'Boost your conversion rate', href: '#' },
+//   {
+//     id: 2,
+//     name: 'How to use search engine optimization to drive traffic to your site',
+//     href: '#',
+//   },
+//   { id: 3, name: 'Improve your customer experience', href: '#' },
+// ];
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ');
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ');
+// }
 
 export default function Header() {
   return (
-    <header className="container w-full bg-slate-900">
-      <Popover className="relative bg-slate-900">
-        <div className="mx-auto max-w-7xl px-6">
+    <header className="container w-full bg-[#082331]">
+      <Popover className="relative">
+        {/* Menus */}
+        <div className="mx-auto max-w-7xl px-6 md:px-16">
           <div className="flex items-center justify-between py-6  md:justify-start md:space-x-10">
             {/* Logo  */}
             <div className="flex justify-start lg:w-0 lg:flex-1">
-              <Link className="flex flex-row items-center " href="#">
+              <Link
+                className="flex flex-row items-center justify-start"
+                href="#"
+              >
                 <span className="sr-only">The Hueprint</span>
-                <div className="relative h-10 w-10 lg:h-16 lg:w-16">
+                <div className="relative h-10 w-10 md:h-16 md:w-16">
                   <Image
                     className="object-cover"
                     src={Logo}
@@ -131,15 +136,15 @@ export default function Header() {
               </Link>
             </div>
 
-            {/*Small Menu  */}
+            {/*Mobile Button Navigation  */}
             <div className="-my-2 -mr-2 md:hidden">
-              <Popover.Button className="focus:ring-inse inline-flex items-center justify-center rounded-md bg-slate-900 p-2 text-white hover:bg-slate-900 hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-white">
+              <Popover.Button className="focus:ring-inse inline-flex items-center justify-center rounded-md bg-[#082331] p-2 text-white focus:outline-none focus:ring-2 focus:ring-white">
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
               </Popover.Button>
             </div>
 
-            {/* Large Menu  */}
+            {/* Desktop Navigation  */}
             <Popover.Group as="nav" className="hidden space-x-10 md:flex">
               {/* Mission link  */}
               <Link
@@ -198,27 +203,33 @@ export default function Header() {
           leaveFrom="opacity-100 scale-100"
           leaveTo="opacity-0 scale-95"
         >
+          {/* Mobile Navigation Panel  */}
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 origin-top-right transform p-2 transition md:hidden"
+            className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
           >
+            {/* Mobile Navigation header  */}
             <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">
               <div className="px-5 pt-5 pb-6">
                 <div className="flex items-center justify-between">
                   <div>
                     <Link
                       className="h-8 w-auto"
-                      src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
+                      href="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
                       alt="Your Company"
                     />
                   </div>
+
+                  {/* Mobile Navigation Close Button  */}
                   <div className="-mr-2">
-                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-black hover:bg-gray-100 hover:text-green-500 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                    <Popover.Button className="inline-flex items-center justify-center rounded-md bg-white p-2 text-black focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                       <span className="sr-only">Close menu</span>
                       <XMarkIcon className="h-6 w-6" aria-hidden="true" />
                     </Popover.Button>
                   </div>
                 </div>
+
+                {/* Top Mobile Navigation Panel Links  */}
                 <div className="mt-6">
                   <nav className="grid gap-y-8">
                     {solutions.map((item) => (
@@ -239,6 +250,8 @@ export default function Header() {
                   </nav>
                 </div>
               </div>
+
+              {/* Bottom Mobile Navigation Panel Links  */}
               <div className="space-y-6 py-6 px-5">
                 <div className="grid grid-cols-2 gap-y-4 gap-x-8">
                   <a

@@ -5,7 +5,7 @@ export default function Social({ classes }) {
     <section
       className={`${classes} ${'social text-white md:flex md:h-[8rem] md:max-w-full'}`}
     >
-      <div className="social_content flex h-[8rem] w-[39rem] items-center justify-between bg-slate-900">
+      <div className="social_content flex h-[8rem] w-[39rem] items-center justify-between bg-[#082331]">
         <div className="mx-auto w-32">
           <ul className="social_icons-links flex flex-row justify-between">
             <li>

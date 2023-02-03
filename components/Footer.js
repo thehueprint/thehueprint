@@ -1,19 +1,19 @@
 import Link from 'next/link';
 //import social icons
-import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { FaInstagram, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="footer bg-slate-900 px-6 pt-16 text-white md:px-16 md:py-20">
+    <footer className="bg-[#082331] px-6 pt-16 text-white md:px-16 md:py-20">
       {/** Footer Top */}
       <section className="relative mb-20 flex flex-col md:flex-row">
         <div className="w-1/2">
           {/** Footer Brand */}
-          <article className="hidden md:block md:h-1/2 md:w-2/3">
-            <h2 className="footer_brand-title text-2xl font-semibold text-white">
+          <article className="hidden md:block md:h-1/2 md:w-2/3 md:space-y-3">
+            <h2 className="font-cuprum text-2xl font-semibold text-white">
               The Hueprint
             </h2>
-            <p className="footer_brand-summary mb-11 text-sm font-light text-[#8C8C8C]">
+            <p className="font-maitree text-sm font-light text-[#8C8C8C]">
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit
               ab debitis voluptate voluptatem iusto aut delectus neque, cum
               doloribus velit.
@@ -22,24 +22,25 @@ export default function Footer() {
             <div className="footer_mail">
               <a
                 href="mailto:hello@thehueprint.com"
-                className="footer_mail-link text-base text-white"
+                className="flex flex-row items-center font-maitree text-base text-white"
               >
-                hello@thehueprint.com
+                <div>
+                  <FaEnvelope />
+                </div>
+                <div className="ml-2">hello@thehueprint.com</div>
               </a>
             </div>
           </article>
 
           {/** Footer Social */}
-          <div className="footer_social-content h-1/2 w-[261px] text-white">
-            <h2 className="footer_social-title text-2xl font-semibold">
-              Social Media
-            </h2>
-            <p className="footer_social-summary mb-11 text-sm font-light text-[#8C8C8C]">
+          <article className="footer_social-content h-1/2 w-[261px] space-y-3 text-white">
+            <h2 className="font-cuprum text-2xl font-semibold">Social Media</h2>
+            <p className="font-maitree text-sm font-light text-[#8C8C8C]">
               Be the first one to know about discounts, offers and events
             </p>
 
             {/** Social Icons */}
-            <div className="footer_social-icons w-32">
+            <div className="w-32">
               <ul className="social_icons-links flex flex-row justify-between">
                 <li>
                   <a href="http://instagram.com/thehueprintagency">
@@ -58,18 +59,18 @@ export default function Footer() {
                 </li>
               </ul>
             </div>
-          </div>
+          </article>
         </div>
 
         {/** Footer Form */}
-        <div className="footer_form order-first mb-16 md:order-none md:mb-4 md:w-1/2">
-          <h2 className="form_title text-2xl font-semibold text-white">
+        <div className="order-first mb-16 space-y-3 md:order-none md:w-1/2">
+          <h2 className="font-cuprum text-2xl font-semibold text-white">
             Contact Us
           </h2>
-          <p className="form_summary text-sm font-light text-[#8C8C8C]">
-            Lorem ipsum dolor sit amet.
+          <p className="font-maitree text-sm font-light text-[#8C8C8C]">
+            We usually respond within 24 hours.
           </p>
-          <form action="" className="mt-6 flex flex-col space-y-3">
+          <form action="" className="mt-6 flex flex-col space-y-3 font-cuprum">
             <input
               className="border-none bg-[#343538] text-sm font-light text-[#8C8C8C]"
               type="text"
@@ -88,7 +89,10 @@ export default function Footer() {
               rows="10"
               placeholder="Message"
             ></textarea>
-            <button className="bg-[#4649C3] p-4" type="submit">
+            <button
+              className="bg-[#4649C3] p-4 font-cuprum text-white"
+              type="submit"
+            >
               Submit
             </button>
           </form>

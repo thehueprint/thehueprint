@@ -5,7 +5,7 @@ import exampleImage from '../public/exampleImage.jpg';
 
 export default function Employee() {
   return (
-    <article className="grid grid-cols-2 space-y-8">
+    <article className="ml-auto grid w-[76rem] grid-cols-2 space-y-8 bg-zinc-400">
       <div className="relative h-72 w-72 md:h-[36rem] md:w-[36rem]">
         <Image
           className="rounded-full"
@@ -17,14 +17,12 @@ export default function Employee() {
               33vw"
         />
       </div>
-
       {/* First Member article*/}
-
-      <div className="h-2/4">
-        <h2 className="mt-4 mb-2 font-cuprum text-5xl font-bold leading-10 text-black">
+      <div>
+        <h2 className="mt-4 mb-2 font-cuprum text-3xl font-bold leading-9 text-black">
           Position
         </h2>
-        <p className="mb-2 font-cuprum text-sm font-normal leading-6 text-black md:text-lg">
+        <p className="font-maituree mb-2 text-sm font-normal leading-10 text-black md:text-base">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc
           vulputate libero et velit interdum, ac aliquet odio mattis. Class
           aptent taciti sociosqu ad litora torquent per conubia nostra, per
@@ -32,12 +30,9 @@ export default function Employee() {
           lobortis.
         </p>
       </div>
-    </article>
-  );
-}
 
-{
-  /* <div className="mb-4 h-20 w-full border-y-8 border-l-8 border-solid border-[#DAB701] md:w-[74rem]">
+      {/* Quote*/}
+      <div className="mb-4 h-20 w-full border-y-8 border-l-8 border-solid border-[#DAB701] md:w-[74rem]">
         <article className="p-6 md:h-[11.875rem] md:w-[26.5rem]">
           <blockquote
             className="text-sm font-light text-black"
@@ -47,5 +42,7 @@ export default function Employee() {
             <cite>Glenn Law</cite>
           </blockquote>
         </article>
-      </div> */
+      </div>
+    </article>
+  );
 }

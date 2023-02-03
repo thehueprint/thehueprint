@@ -5,7 +5,7 @@ import Button from './Button';
 
 export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero bg-white">
       <div className=" flex flex-col md:flex-row">
         {/* Hero Image */}
         <div className="relative h-72 w-full md:h-[42rem] md:w-[39rem]">
@@ -22,12 +22,11 @@ export default function Hero() {
         {/* Hero Content */}
         <div className="flex flex-col md:h-[42rem] md:w-[41rem]">
           {/* Hero Box 1 */}
-
-          <div className="px-5 pt-6  md:h-[26.125rem] md:w-[35rem] md:pt-[64px] md:pl-[32px] md:pr-[64px]">
-            <h1 className="mb-6 font-cuprum text-2xl font-bold leading-7">
+          <div className="space-y-8 px-5 pt-6 md:h-[26.125rem] md:w-[41rem] md:pt-[64px] md:pl-[32px] md:pr-[64px]">
+            <h1 className="font-cuprum text-2xl font-bold leading-7 md:text-4xl">
               Design Growth with The Hueprint&#39;s Creativity.
             </h1>
-            <p className="mb-6 font-maitree text-sm font-normal leading-6">
+            <p className="font-maitree text-sm font-normal leading-6 md:text-2xl">
               The Hueprint is a creative consulting agency that provides
               innovative solutions for businesses through digital media,
               assisting clients in achieving their business objectives.
@@ -40,11 +39,11 @@ export default function Hero() {
           <div className="flex h-72  md:h-[15.875rem]">
             {/* Hero Box 2 Text */}
             <article className="flex h-56 w-3/4 flex-col justify-center space-y-3 self-end bg-[#DAB701] p-6 md:h-[11.875rem] md:w-[26.5rem] md:p-9">
-              <h2 className=" font-cuprum text-lg font-bold leading-7 text-white md:text-3xl">
+              <h2 className="font-cuprum text-2xl font-bold leading-7 md:text-3xl md:text-black">
                 Have a creative idea?
               </h2>
 
-              <p className="font-maitree text-sm font-normal leading-6 text-white md:text-2xl">
+              <p className="text-medium font-maitree font-normal leading-6 md:text-lg md:text-black">
                 Grow your business with creative solutions.
               </p>
 

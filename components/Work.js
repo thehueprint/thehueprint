@@ -13,26 +13,27 @@ export default function Work() {
       {/* Maybe make into a grid */}
       {/* 1st part of the work Section */}
 
-      <div className="relative h-[37.5rem] md:flex md:flex-row">
+      <div className="relative flex flex-col md:h-[37.5rem] md:flex-row">
         {/*left side of work feature section*/}
         {/*summary of project*/}
 
-        <div className="md:w-1/2">
+        <div className="w-full md:w-1/2">
           {/* left box */}
           <div className="md:flex md:h-96 md:flex-row md:justify-end">
             {/* Boxes */}
             <div className="hidden md:flex md:flex-col">
+              {/*could make with 320px */}
               <div className="bg-[#D8B800] md:h-[112px] md:w-[195px]"></div>
               <div className="bg-[#A98E00] md:h-24 md:w-40 md:self-end"></div>
             </div>
 
             {/* Project Article */}
-            <article className="flex h-[200px] w-full flex-col justify-center space-y-3 bg-[#D8B800] p-6 md:h-[17rem] md:w-1/2 md:self-end">
-              <h2 className="font-cuprum text-lg font-bold leading-7 text-white md:text-3xl">
-                Feature Project
+            <article className="flex h-[300px] w-full flex-col justify-center space-y-3 bg-[#D8B800] p-6 md:h-[17rem] md:w-1/2 md:self-end">
+              <h2 className="font-cuprum text-2xl font-bold leading-7 md:text-3xl md:text-black">
+                Feature Project.
               </h2>
 
-              <p className="font-maitree text-sm font-normal leading-6 text-white md:text-2xl">
+              <p className="text-medium font-maitree font-normal leading-6 md:text-lg md:text-black">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
                 ex.
               </p>
@@ -48,7 +49,7 @@ export default function Work() {
           </div>
 
           {/* Boxes */}
-          <div className="blocks hidden md:flex md:h-40">
+          <div className="blocks hidden h-40 md:flex md:h-[13.5rem]">
             <div className="h-full w-[160px] bg-[#D8B800]"></div>
             <div className="h-24 w-40 bg-[#A98E00]"></div>
           </div>
@@ -72,7 +73,7 @@ export default function Work() {
       {/* 2nd part of the work Section */}
       {/* 3 preview images of other projects */}
       <div className="hidden md:flex md:w-auto">
-        <div className="relative h-80 w-2/4">
+        <div className="relative hidden h-80 w-2/4 md:block">
           <Image
             className="work_project-image object-cover"
             src={wi}
@@ -84,7 +85,7 @@ export default function Work() {
           />
         </div>
 
-        <div className="relative h-80 w-2/4">
+        <div className="relative hidden h-80 w-2/4 md:block">
           <Image
             className="object-cover"
             src={wi}
@@ -96,7 +97,7 @@ export default function Work() {
           />
         </div>
 
-        <div className="relative h-80 w-2/4">
+        <div className="relative hidden h-80 w-2/4 md:block">
           <Image
             className="work_project-image object-cover"
             src={wi}

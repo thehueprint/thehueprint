@@ -1,14 +1,22 @@
-import { Hero, Social, Mission, Feature, Work, Team } from '../components';
+import {
+  Hero,
+  Social,
+  Mission,
+  Services,
+  Work,
+  Team,
+  News,
+} from '../components';
 
 const Page = () => (
   <main>
     <Hero />
     <Social classes="hidden md:block" />
     <Mission />
-    <Feature />
+    <Services />
     <Work />
     <Team />
-    <Mission />
+    <News />
   </main>
 );
 
