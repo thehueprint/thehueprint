@@ -88,9 +88,9 @@ export default function Team() {
 
           {/* Second Member Quote*/}
           <div className="absolute bottom-0 right-0 flex h-20 w-full flex-row justify-start border-y-8 border-l-8 border-solid border-[#4649C3] md:h-[13.25rem] md:w-[76rem]">
-            <article className="relative my-auto w-[38rem] pt-6">
+            <article className="relative my-auto w-[38rem] pt-6 text-center">
               <blockquote
-                className="font-cuprum text-sm font-normal leading-10 text-black md:w-2/3 md:text-xl"
+                className="text-center font-cuprum text-sm font-normal leading-10 text-black md:w-2/3 md:text-xl"
                 cite="http://www.worldwildlife.org/who/index.html"
               >
                 <i>Lorem ipsum dolor sit amet. - </i>
