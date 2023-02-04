@@ -8,7 +8,7 @@ export default function Hero() {
     <section className="hero bg-white">
       <div className=" flex flex-col lg:flex-row">
         {/* Hero Image */}
-        <div className="relative h-72 w-full lg:h-[42rem] lg:w-[39rem]">
+        <div className="relative h-72 w-full md:h-[42rem] lg:w-[39rem]">
           <Image
             className="object-fill"
             src={heroImage}
@@ -39,11 +39,11 @@ export default function Hero() {
           <div className="flex h-72  lg:h-[15.875rem]">
             {/* Hero Box 2 Text */}
             <article className="flex h-56 w-3/4 flex-col justify-center space-y-3 self-end bg-[#DAB701] p-6 lg:h-[11.875rem] lg:w-[26.5rem] lg:p-9">
-              <h2 className="font-cuprum text-2xl font-bold leading-7 lg:text-3xl lg:text-black">
+              <h2 className="font-cuprum text-2xl font-bold leading-7 text-white lg:text-3xl">
                 Have a creative idea?
               </h2>
 
-              <p className="text-medium font-maitree font-normal leading-6 lg:text-lg lg:text-black">
+              <p className="text-medium font-maitree font-normal leading-6 text-white lg:text-lg">
                 Grow your business with creative solutions.
               </p>
 

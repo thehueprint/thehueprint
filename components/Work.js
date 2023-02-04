@@ -29,11 +29,11 @@ export default function Work() {
 
             {/* Project Article */}
             <article className="flex h-[300px] w-full flex-col justify-center space-y-3 bg-[#D8B800] p-6 md:h-[17rem] md:w-1/2 md:self-end">
-              <h2 className="font-cuprum text-2xl font-bold leading-7 md:text-3xl md:text-white">
+              <h2 className="font-cuprum text-2xl font-bold leading-7 text-white md:text-3xl">
                 Feature Project.
               </h2>
 
-              <p className="text-medium font-maitree font-normal leading-6 md:text-lg md:text-white">
+              <p className="text-medium font-maitree font-normal leading-6 text-white md:text-lg">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi,
                 ex.
               </p>

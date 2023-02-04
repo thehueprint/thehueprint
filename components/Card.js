@@ -1,5 +1,3 @@
-import Image from 'next/image';
-import exampleImage from '../public/exampleImage.jpg';
 import Link from 'next/link';
 
 export default function Card() {
@@ -7,21 +5,12 @@ export default function Card() {
     <div className="card relative space-y-8 bg-white p-8 lg:h-[31.1875rem]">
       <article className="space-y-8">
         <div className="flex flex-row items-center">
-          <div className="relative">
-            <Image
-              src={exampleImage}
-              className="w-10"
-              width={512}
-              height={512}
-              alt="Feature icon"
-            />
-          </div>
-          <h2 className="font-cuprum text-4xl font-bold leading-9 text-black">
+          <h2 className="font-cuprum text-lg font-bold leading-9 text-black lg:text-4xl">
             Design
           </h2>
         </div>
 
-        <p className="font-maitree text-2xl font-normal leading-10 text-black lg:font-light">
+        <p className="font-maitree text-base font-normal leading-10 text-black lg:text-2xl">
           We create immersive digital experiences by using user-centered design
           practices to understand and solve business challenges through
           intuitive and engaging solutions.
