@@ -109,8 +109,8 @@ export default function Header() {
     <header className="container w-full bg-[#082331]">
       <Popover className="relative">
         {/* Menus */}
-        <div className="mx-auto max-w-7xl px-6 md:px-16">
-          <div className="flex items-center justify-between py-6  md:justify-start md:space-x-10">
+        <div className="mx-auto max-w-7xl px-6 lg:px-16">
+          <div className="flex items-center justify-between py-6  lg:justify-start lg:space-x-10">
             {/* Logo  */}
             <div className="flex justify-start lg:w-0 lg:flex-1">
               <Link
@@ -118,7 +118,7 @@ export default function Header() {
                 href="#"
               >
                 <span className="sr-only">The Hueprint</span>
-                <div className="relative h-10 w-10 md:h-16 md:w-16">
+                <div className="relative h-10 w-10 lg:h-16 lg:w-16">
                   <Image
                     className="object-cover"
                     src={Logo}
@@ -130,14 +130,14 @@ export default function Header() {
                   />
                 </div>
 
-                <p className="hidden font-cuprum text-2xl text-white md:block">
+                <p className="hidden font-cuprum text-2xl text-white lg:block">
                   The Hueprint
                 </p>
               </Link>
             </div>
 
             {/*Mobile Button Navigation  */}
-            <div className="-my-2 -mr-2 md:hidden">
+            <div className="-my-2 -mr-2 lg:hidden">
               <Popover.Button className="focus:ring-inse inline-flex items-center justify-center rounded-md bg-[#082331] p-2 text-white focus:outline-none focus:ring-2 focus:ring-white">
                 <span className="sr-only">Open menu</span>
                 <Bars3Icon className="h-6 w-6" aria-hidden="true" />
@@ -145,7 +145,7 @@ export default function Header() {
             </div>
 
             {/* Desktop Navigation  */}
-            <Popover.Group as="nav" className="hidden space-x-10 md:flex">
+            <Popover.Group as="nav" className="hidden space-x-10 lg:flex">
               {/* Mission link  */}
               <Link
                 className="text-base font-medium text-white hover:text-green-500"
@@ -206,7 +206,7 @@ export default function Header() {
           {/* Mobile Navigation Panel  */}
           <Popover.Panel
             focus
-            className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition md:hidden"
+            className="absolute inset-x-0 top-0 z-10 origin-top-right transform p-2 transition lg:hidden"
           >
             {/* Mobile Navigation header  */}
             <div className="divide-y-2 divide-gray-50 rounded-lg bg-white shadow-lg ring-1 ring-black ring-opacity-5">

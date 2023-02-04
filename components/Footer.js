@@ -4,12 +4,12 @@ import { FaInstagram, FaLinkedin, FaTwitter, FaEnvelope } from 'react-icons/fa';
 
 export default function Footer() {
   return (
-    <footer className="bg-[#082331] px-6 pt-16 text-white md:px-16 md:py-20">
+    <footer className="bg-[#082331] px-6 pt-16 text-white lg:px-16 lg:py-20">
       {/** Footer Top */}
-      <section className="relative mb-20 flex flex-col md:flex-row">
+      <section className="relative mb-20 flex flex-col lg:flex-row">
         <div className="w-1/2">
           {/** Footer Brand */}
-          <article className="hidden md:block md:h-1/2 md:w-2/3 md:space-y-3">
+          <article className="hidden lg:block lg:h-1/2 lg:w-2/3 lg:space-y-3">
             <h2 className="font-cuprum text-2xl font-semibold text-white">
               The Hueprint
             </h2>
@@ -63,7 +63,7 @@ export default function Footer() {
         </div>
 
         {/** Footer Form */}
-        <div className="order-first mb-16 space-y-3 md:order-none md:w-1/2">
+        <div className="order-first mb-16 space-y-3 lg:order-none lg:w-1/2">
           <h2 className="font-cuprum text-2xl font-semibold text-white">
             Contact Us
           </h2>
@@ -100,8 +100,8 @@ export default function Footer() {
       </section>
 
       {/** Footer Bottom */}
-      <section className="fb flex flex-col justify-between md:flex-row md:items-center">
-        <ul className="fl mb-4 flex flex-col justify-between space-y-6 font-cuprum text-sm font-light text-[#8C8C8C] md:mb-0 md:w-[31.125rem] md:flex-row md:space-y-0">
+      <section className="fb flex flex-col justify-between lg:flex-row lg:items-center">
+        <ul className="fl mb-4 flex flex-col justify-between space-y-6 font-cuprum text-sm font-light text-[#8C8C8C] lg:mb-0 lg:w-[31.125rem] lg:flex-row lg:space-y-0">
           <li className="footer_nav-link">
             <Link href="/">About</Link>
           </li>

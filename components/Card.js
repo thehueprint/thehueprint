@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Card() {
   return (
-    <div className="card relative space-y-8 bg-white p-8 md:h-[31.1875rem]">
+    <div className="card relative space-y-8 bg-white p-8 lg:h-[31.1875rem]">
       <article className="space-y-8">
         <div className="flex flex-row items-center">
           <div className="relative">
@@ -21,7 +21,7 @@ export default function Card() {
           </h2>
         </div>
 
-        <p className="font-maitree text-2xl font-normal leading-10 text-black md:font-light">
+        <p className="font-maitree text-2xl font-normal leading-10 text-black lg:font-light">
           We create immersive digital experiences by using user-centered design
           practices to understand and solve business challenges through
           intuitive and engaging solutions.

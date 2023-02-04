@@ -3,7 +3,7 @@ import { FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa';
 export default function Social({ classes }) {
   return (
     <section
-      className={`${classes} ${'social text-white md:flex md:h-[8rem] md:max-w-full'}`}
+      className={`${classes} ${'social text-white lg:flex lg:h-[8rem] lg:max-w-full'}`}
     >
       <div className="social_content flex h-[8rem] w-[39rem] items-center justify-between bg-[#082331]">
         <div className="mx-auto w-32">
