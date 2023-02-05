@@ -5,8 +5,8 @@ import exampleImage from '../public/exampleImage.jpg';
 
 export default function Team() {
   return (
-    <section className=" space-y-32 bg-white lg:mb-40">
-      <div className="w-full pl-16 lg:pt-16">
+    <section className=" mb-40 space-y-32 bg-white">
+      <div className="pl-16 lg:pt-16">
         <h2 className="mb-2 font-cuprum text-lg font-bold leading-10 text-black lg:mt-4 lg:text-5xl">
           Meet The Team
         </h2>
