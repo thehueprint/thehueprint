@@ -8,13 +8,11 @@ export default function Services() {
           How We Can Help
         </h2>
 
-        <div className="mt-16 grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-y-2 md:gap-x-2 lg:w-full">
+        <div className="mt-16 grid grid-cols-1 gap-y-4 md:grid-cols-2 md:gap-y-2 md:gap-x-2">
           <Card />
           <Card />
           <Card />
-          {/*Last Card Component needs different classes for hover state */}
           <Card />
-          {/**/}
         </div>
       </div>
     </section>

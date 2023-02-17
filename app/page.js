@@ -11,7 +11,7 @@ import {
 const Page = () => (
   <main>
     <Hero />
-    <Social classes="hidden md:block" />
+    <Social classes="hidden lg:block" />
     <Mission />
     <Services />
     <Work />

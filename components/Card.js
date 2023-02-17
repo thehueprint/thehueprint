@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 export default function Card() {
   return (
-    <div className="card relative space-y-8 bg-white p-8 lg:h-[31.1875rem]">
+    <div className="card relative space-y-8 bg-white p-8 lg:h-[31.1875rem] lg:w-[28rem]">
       <article className="space-y-8">
         <div className="flex flex-row items-center">
           <h2 className="font-cuprum text-lg font-bold leading-9 text-black lg:text-4xl">

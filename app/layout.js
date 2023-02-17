@@ -18,9 +18,9 @@ const maitree = Maitree({
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={'${cuprum.variable} ${maitree.variable}'}>
-      <body className="container mx-auto">
+      <body className="container mx-auto max-w-7xl">
         <Header />
-        <main>{children}</main>
+        {children}
         <Footer />
       </body>
     </html>
