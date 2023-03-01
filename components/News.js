@@ -27,33 +27,6 @@ export default function News() {
   return (
     <section className="relative flex flex-col lg:block lg:h-[43.75rem]">
       <div className="mb-16 space-y-16 px-5 pt-16 lg:m-auto lg:flex lg:lg:h-[30rem] lg:w-[1152px] lg:flex-row lg:space-y-0 lg:bg-slate-50 lg:p-0 lg:py-16">
-        {/* newsletter sign up */}
-        <article className="space-y-3 lg:flex lg:w-[28.25rem] lg:flex-col lg:px-16">
-          <h2 className="font-cuprum text-2xl font-bold leading-7 lg:text-3xl lg:text-black">
-            Subscribe!
-          </h2>
-          <p className=" text-medium font-maitree font-normal leading-6 lg:text-lg lg:text-black">
-            Sign up to our newsletter.
-          </p>
-
-          {/** Newsletter Sign Up */}
-          <div className="self-end">
-            <form action="" className="flex flex-row font-cuprum">
-              <input
-                className="border-none bg-[#343538] text-sm font-light text-[#8C8C8C]"
-                type="email"
-                placeholder="Sign up to our newsletter"
-              />
-              <button
-                className="bg-[#A98E00] p-3 font-cuprum text-white"
-                type="submit"
-              >
-                Submit
-              </button>
-            </form>
-          </div>
-        </article>
-
         {/* news/blog feed */}
         <article className="space-y-3 lg:flex lg:flex-col lg:justify-between lg:pr-16">
           <h2 className="font-cuprum text-2xl font-bold leading-7 lg:text-3xl lg:text-black">

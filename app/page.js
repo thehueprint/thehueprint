@@ -8,6 +8,14 @@ import {
   News,
 } from '../components';
 
+export const metadata = {
+  title: 'The Hue Print',
+  href: '/favicon.ico',
+  charset: 'UTF-8',
+  viewport: 'width=device-width, initial-scale=1',
+  keywords: 'HTML, CSS, JavaScript, NextJS',
+};
+
 const Page = () => (
   <main>
     <Hero />
@@ -16,6 +24,7 @@ const Page = () => (
     <Services />
     <Work />
     <Team />
+    <Mission />
     <News />
   </main>
 );

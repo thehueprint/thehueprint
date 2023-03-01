@@ -179,3 +179,19 @@
     </>
   )}
 </Popover>;
+
+{
+  /** Newsletter Sign Up */
+}
+<div className="self-end">
+  <form action="" className="flex flex-row font-cuprum">
+    <input
+      className="border-none bg-[#343538] text-sm font-light text-[#8C8C8C]"
+      type="email"
+      placeholder="Sign up to our newsletter"
+    />
+    <button className="bg-[#A98E00] p-3 font-cuprum text-white" type="submit">
+      Submit
+    </button>
+  </form>
+</div>;

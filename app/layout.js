@@ -1,6 +1,6 @@
 import './globals.css';
 import { Header, Footer } from '../components';
-import { Cuprum, Maitree } from '@next/font/google';
+import { Cuprum, Maitree } from 'next/font/google';
 
 const cuprum = Cuprum({
   subsets: ['latin'],
@@ -14,6 +14,16 @@ const maitree = Maitree({
   variable: '--font-maitree',
   display: 'optional',
 });
+
+export const metadata = {
+  title: 'The Hue Print',
+  description:
+    'The Hue Print is a full-service creative agency based in the heart of Brooklyn, New York. We specialize in branding, web design, and digital marketing.',
+  href: '/favicon.ico',
+  charset: 'UTF-8',
+  viewport: 'width=device-width, initial-scale=1',
+  keywords: 'HTML, CSS, JavaScript, NextJS',
+};
 
 export default function RootLayout({ children }) {
   return (
